@@ -1,0 +1,337 @@
+:root {
+  --textColor: #fff;
+  --iconColor: #ff0000;
+  --black: #000;
+  --btn: #f44336;
+  --card: #fff3f3;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "popins", sans-serif;
+}
+
+/* ---------------header section----------------  */
+.header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("./assets/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+nav {
+  padding: 20px 0;
+}
+
+.nav-link img {
+  width: 8%;
+  border-radius: 50%;
+}
+
+.nav-link {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+}
+
+.nav-menu li {
+  font-size: 22px;
+  padding: 0 18px;
+  list-style: none;
+}
+
+.nav-menu li a {
+  color: var(--textColor);
+  text-decoration: none;
+}
+
+.header-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: var(--textColor);
+}
+
+.header-title h1 {
+  font-weight: 400;
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.header-title p {
+  margin-bottom: 30px;
+}
+
+.header-title .btn {
+  text-decoration: none;
+  border: 1px solid var(--textColor);
+  color: var(--textColor);
+  padding: 15px 30px;
+  transition: 1s;
+  outline: none;
+  display: inline-block;
+}
+
+.header-title .btn:hover {
+  background-color: var(--btn);
+}
+
+/* -----------hamburger create--------------  */
+
+/* ---------------course section---------------  */
+.course {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.course h1,
+p {
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.courses-col {
+  flex-basis: 32%;
+  background-color: var(--card);
+  margin: 25px;
+  overflow: hidden;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.courses-col h3 {
+  padding: 10px 0;
+}
+
+.courses-col p {
+  text-align: left;
+  line-height: 1.6;
+}
+
+/* --------------- Campus style ---------------  */
+.campus {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  padding: 20px;
+}
+
+.campus h1 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  overflow: hidden;
+  margin: 30px;
+  border-radius: 10px;
+  position: relative;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block;
+}
+
+.campus-col .campus-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  width: 0;
+  height: 100%;
+  transition: 0.5s;
+}
+
+.campus-overlay span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-50%, -50%);
+  color: gold;
+  font-size: 24px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.campus-col:hover span {
+  opacity: 1;
+  left: 50%;
+}
+
+.campus-col:hover .campus-overlay {
+  background-color: gray;
+  width: 100%;
+}
+
+/* ------------------- facilities -----------------  */
+.facilities {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  padding-top: 40px;
+}
+
+.facilities h1 {
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.facilities-col {
+  flex-basis: 32%;
+  margin: 20px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.facilities-col img {
+  width: 100%;
+  display: block;
+}
+
+.facilities-col div {
+  background-color: #f7f7f7;
+}
+
+.facilities-col h4 {
+  padding: 20px 0;
+}
+
+.facilities-col p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ---------------------- user comment -------------------------  */
+.user-comment {
+  width: 80%;
+  margin: 30px auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.user-comment h1 {
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.comment-col {
+  background-color: var(--card);
+  flex-basis: 43%;
+  overflow: hidden;
+  margin: 40px;
+  display: flex;
+  padding: 30px;
+  cursor: pointer;
+}
+
+.comment-col img {
+  height: 60px;
+  border-radius: 50%;
+}
+
+.hero-title p,
+h3 {
+  line-height: 1.6;
+  margin-left: 30px;
+  text-align: left;
+}
+
+.comment-star {
+  padding: 8px 0;
+  margin-left: 30px;
+  text-align: left;
+  color: var(--iconColor);
+}
+
+/* --------------------- contact us ------------------------  */
+.contact-us {
+  width: 80%;
+  margin: 30px auto;
+  padding: 50px 0;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url("./assets/banner2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.contact-us h1 {
+  padding: 100px 0;
+  font-weight: 900;
+  color: var(--textColor);
+}
+
+.contact-us a {
+  text-decoration: none;
+  border: 1px solid var(--textColor);
+  padding: 20px 30px;
+  color: var(--textColor);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+
+.contact-us a:hover {
+  background-color: gray;
+}
+
+/* ---------------- about ----------------  */
+footer {
+  width: 80%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+footer h1 {
+  text-align: center;
+  font-weight: 400;
+  margin: 20px 0;
+}
+
+footer p {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+footer .fab {
+  color: var(--iconColor);
+  font-size: 22px;
+  margin: 0 20px;
+}
+
+footer .love {
+  margin-top: 18px;
+}
+
+footer .fa-hand-holding-heart {
+  font-size: 24px;
+  padding: 0 20px;
+  color: var(--iconColor);
+}
